@@ -1,5 +1,5 @@
 <template>
-  <div class="potree_container" style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; ">
+  <div class="potree_container" style="width: 100%; height: 100%">
     <div id="potree_render_area"></div>
     </div>
 </template>
