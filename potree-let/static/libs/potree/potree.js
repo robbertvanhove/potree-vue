@@ -22872,7 +22872,7 @@ ENDSEC
 						group.max = Math.max(group.max, measure.duration);
 					}
 
-					let glQueries = Potree.resolveQueries(this.renderer.getContext());
+					/*let glQueries = Potree.resolveQueries(this.renderer.getContext());
 					for(let [key, value] of glQueries){
 
 						let group = {
@@ -22886,7 +22886,7 @@ ENDSEC
 						let groupname = `[tq] ${key}`;
 						groups.set(groupname, group);
 						names.add(groupname);
-					}
+					}*/
 					
 					for(let [name, group] of groups){
 						group.mean = group.sum / group.n;
@@ -22953,8 +22953,8 @@ ENDSEC
 				performance.mark("loop-end");
 				performance.measure("loop", "loop-start", "loop-end");
 			}
-			
-			this.resolveTimings(timestamp);
+			// bblu
+			// this.resolveTimings(timestamp);
 
 			Potree.framenumber++;
 		}
